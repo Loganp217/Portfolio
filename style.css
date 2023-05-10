@@ -269,13 +269,13 @@ section .title::after{
     content: "my experience";
 }
 .jobHistory .job-content .card{
-    width: calc(50% - 20px);
     background: #222;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 20px 20px;
 }
 .jobHistory .job-content .card:hover{
     background: #0060cf;
@@ -299,7 +299,9 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
+.jobHistory .job-content .bottom{
+    display: flex;
+}
 /* skills section styling */
 
 .skills .title::after{
@@ -315,7 +317,7 @@ section .title::after{
 }
 .skills .skills-content .left p{
     text-align: justify;
-}
+}info
 .skills .skills-content .left a{
     display: inline-block;
     background: #0060cf;
@@ -455,7 +457,7 @@ section .title::after{
     content: "get in touch";
 }
 .contact .contact-content .column{
-    width: calc(50% - 10px);
+    width: calc(50% - 5px);
 }
 .contact .contact-content .text{
     font-size: 20px;
@@ -470,8 +472,9 @@ section .title::after{
 }
 .contact .contact-content .row{
     display: flex;
+    flex-wrap: wrap;
     height: 65px;
-    align-items: center;
+    /* align-items: center; */
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
