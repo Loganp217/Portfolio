@@ -268,6 +268,7 @@ section .title::after{
     background: #111;
     content: "my experience";
 }
+
 .jobHistory .job-content .card{
     background: #222;
     text-align: center;
@@ -276,13 +277,14 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 20px 20px;
+    display: flex;
 }
 .jobHistory .job-content .card:hover{
     background: #0060cf;
 }
 .jobHistory .job-content .card .box{
     transition: all 0.3s ease;
-}
+} 
 .jobHistory .job-content .card:hover .box{
     transform: scale(1.05);
 }
@@ -299,9 +301,7 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.jobHistory .job-content .bottom{
-    display: flex;
-}
+
 /* skills section styling */
 
 .skills .title::after{
